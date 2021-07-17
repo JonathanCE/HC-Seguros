@@ -19,7 +19,7 @@
         <div class="links-principales">
             <a href="#servicios">Productos y Servicios</a>
             <a href="#contacto">Contacto</a>
-            <a href="#contacto">Quienes somos</a>
+            <a href="#nosotros">Quienes somos</a>
         </div>
         <div id="menuHamburguesa" class="icon">
             <div class="bar1"></div>
@@ -32,14 +32,31 @@
         <section id="presentacion">
             <h2>HC broker de seguros y servicios financieros.</h2>
             <ul id="servicios-principales">
-                <li><i class="uil uil-caret-right"></i> Gastos Medicos</li>
-                <li><i class="uil uil-caret-right"></i> Seguros de Vida</li>
-                <li><i class="uil uil-caret-right"></i> Planes de Ahorro</li>
-                <li><i class="uil uil-caret-right"></i> Inversiones</li>
+                <li><i class="uil uil-medical-square"></i> Gastos Medicos</li>
+                <li><i class="uil uil-shield-plus"></i> Seguros de Vida</li>
+                <li><i class="uil uil-money-withdraw"></i> Planes de Ahorro</li>
+                <li><i class="uil uil-arrow-growth"></i> Inversiones</li>
             </ul>
         </section>
 
-        <section id=""></section>
+        <section id="contacto">
+            <h2>Contáctanos.</h2>
+            <form name="contacto" method="POST" data-netlify="true">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre..." required>
+
+                <label for="celular">Teléfono de contacto</label>
+                <input type="tel" name="celular" id="celular" placeholder="Escriba su numero de contacto..." required>
+
+                <label for="email">Correo de contacto</label>
+                <input type="email" name="email" id="email" placeholder="Escriba su correo..." required>
+
+                <label for="mensaje">Escriba su mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="35" rows="7" placeholder="Escriba su mensaje..." required></textarea>
+
+                <button type="submit">Enviar mensaje.</button>
+            </form>
+        </section>
     </main>
 
     <footer>
@@ -51,8 +68,8 @@
         </div>
         <div class="footer-info">
             <div class="footer-info-contacto">
-                <a href="tel:+523221477718">Tel. 322-147-7718</a>
-                <a href="mailto:hcamacho.seguros@gmail.com">Email: hcamacho.seguros@gmail.com</a>
+                <a href="tel:+523221477718" id="telefono">Tel. 322-147-7718</a>
+                <a href="mailto:hcamacho.seguros@gmail.com" id="correo">Email: hcamacho.seguros@gmail.com</a>
             </div>
             <div class="footer-legal">
                 <div class="legal">&copy; HC Seguros 2021.</div>
