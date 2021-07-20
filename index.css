@@ -94,9 +94,71 @@ nav {
     padding: 4px;
 }
 #presentacion li:hover {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,101,1) 0%, rgba(0,212,255,1) 100%); 
+    background-color: hsl(180, 4%, 75%); 
     border-radius: 3px;
+    transition: .3s;
+}
+
+#servicios {
+    padding-bottom: 40px;
+}
+#servicios ul {
+    list-style: none;
+    padding: 20px;
+    font-family: var(--main-font);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#servicios li {
+    font-size: 1.7rem;
+}
+#servicios h3, h2 {
+    font-family: var(--main-font);
+}
+#servicios h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    background-color: #0065b1;
+    color: white;
+}
+.oferta-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 0 40px;
+    margin-top: 40px;
+}
+.oferta-servicios a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: var(--main-font);
+    border: 3px solid hsl(180, 4%, 75%);
+    border-radius: 10px;
+    transition: .3s;
+}
+.oferta-servicios a:hover {
+    background-color: hsl(180, 4%, 75%);
+}
+.servicio img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.servicio h3 {
+    padding: 15px;
+}
+.servicio p {
+    padding: 0 15px 15px;
+}
+.servicio button {
+    padding: 10px;
+    margin: 0 15px 15px;
+    font-size: 18px;
 }
 
 #contacto {
@@ -208,6 +270,43 @@ footer a:hover {
     flex-direction: column;
 }
 
+#nosotros h2 {
+    padding: 20px;
+    text-align: center;
+    background-color: #0065b1;
+    color: white;
+    font-size: 2rem;
+}
+#nosotros__gallery {
+    text-align: center;
+    margin: 20px 0;
+}
+#nosotros img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+#nosotros__mensaje {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 0 20px;
+}
+#nosotros__mensaje h3 {
+    max-width: 1000px;
+    font-family: var(--main-font);
+    margin: auto;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+#nosotros__mensaje p {
+    max-width: 1000px;
+    margin: auto;
+    font-family: var(--main-font);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
 @media screen and (max-width: 1220px) {
     #presentacion ul {
         width: 65%;
@@ -255,6 +354,14 @@ footer a:hover {
         width: 80%;
     }
 
+    .oferta-servicios {
+        grid-template-columns: 1fr 1fr;
+    }
+    #nosotros__gallery {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -275,9 +382,16 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 700px) {
-    textarea, input, label, button {
+@media screen and (max-width: 710px) {
+    #servicios ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    textarea, input, label, #contacto button {
         width: 320px;
+    }
+    button {
+        background-color: hsl(180, 4%, 75%);
     }
 }
 
@@ -290,5 +404,12 @@ footer a:hover {
     }
     #presentacion ul {
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .oferta-servicios {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
     }
 }
