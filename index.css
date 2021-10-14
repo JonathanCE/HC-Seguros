@@ -12,7 +12,7 @@
 }
 
 nav {
-    padding: 20px 40px;
+    padding: 20px 40px 15px;
     background-color: #0065b1;
     color: white;
 }
@@ -61,7 +61,7 @@ nav {
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-.nav a:hover {
+.links-principales a:hover {
     /* color: var(--color-hover); */
     border-bottom: 4px solid white;
 }
