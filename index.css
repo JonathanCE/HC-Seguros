@@ -136,8 +136,8 @@ nav {
     text-decoration: none;
     color: black;
     font-family: var(--main-font);
-    border: 3px solid hsl(180, 4%, 75%);
-    border-radius: 10px;
+    border: 4px solid hsl(180, 4%, 75%);
+    border-radius: 2px;
     transition: .3s;
 }
 .oferta-servicios a:hover {
@@ -146,8 +146,8 @@ nav {
 .servicio img {
     width: 100%;
     height: auto;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
 }
 .servicio h3 {
     padding: 15px;
@@ -296,15 +296,42 @@ footer a:hover {
     max-width: 1000px;
     font-family: var(--main-font);
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 30px;
 }
 #nosotros__mensaje p {
     max-width: 1000px;
+    font-size: 1.2rem;
     margin: auto;
     font-family: var(--main-font);
     margin-bottom: 20px;
     text-align: justify;
+}
+.valores {
+    max-width: 1000px;
+    margin: auto;
+    font-size: 1.8rem;
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+.valores ul {
+    margin: 30px 0;
+    list-style: none;
+    font-family: var(--main-font);
+    padding: 0;
+}
+.valores li {
+    width: max-content;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 4px;
+    font-weight: lighter;
+}
+.valores li:hover {
+    background-color: hsl(180, 4%, 75%); 
+    border-radius: 3px;
+    transition: .3s;
 }
 
 @media screen and (max-width: 1220px) {
